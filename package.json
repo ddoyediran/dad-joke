@@ -1,0 +1,23 @@
+{
+  "name": "dad-joke",
+  "version": "1.0.0",
+  "description": "### We are going to build a simple command line tool which allows us to make a request to an API and store the data in a text file! We will be using the following modules:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ddoyediran/dad-joke.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ddoyediran/dad-joke/issues"
+  },
+  "homepage": "https://github.com/ddoyediran/dad-joke#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
