@@ -18,10 +18,18 @@ request(
   },
   function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      // const results = JSON.parse(body);
-      // console.log(results.results[0].joke);
+      const output = JSON.parse(body);
+      // console.log(output.results[0].joke);
 
-      console.log(JSON.parse(body));
+      // console.log(JSON.parse(body));
+
+      // write to file
+      fs.writeFile("jokes.txt", output.results[0].joke, function (err) {
+        if (err) {
+          console.log("no jokes were found for that search term");
+        }
+        console.log(output.results[0].joke);
+      });
     }
   }
 );
